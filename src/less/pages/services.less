@@ -1,0 +1,41 @@
+
+.services-sidebar {
+  .title {
+    font-size: 30px;
+    line-height: 90px;
+    @media screen and (max-width: @lg-width ) {
+      text-align: center;
+    }
+  }
+}
+.services{
+  &-list {
+    @media screen and (max-width: @lg-width ) {
+      margin: 0 auto;
+      width: 265px;
+    }
+    &__item {
+      font-size: 20px;
+      line-height: 48px;
+      color: @text-blue-dark;
+      &::before {
+        content: '';
+        .inline-block;
+        margin-right: 20px;
+        width: 4px;
+        height: 4px;
+        background: @bg-pink;
+        border-radius: 50%;
+      }
+    }
+  }
+  .special-offers-text{
+    @media screen and (max-width: @lg-width ) {
+      margin: 0 auto;
+      max-width: 660px;
+    }
+  }
+}
+.services .catalog{
+  margin-top: 135px;
+}

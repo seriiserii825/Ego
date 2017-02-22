@@ -11,8 +11,45 @@ body{
   display: block;
   clear: both;
 }
+.container-big{
+  margin: 0 auto;
+  max-width: 1300px;
+}
 ul{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.pink{
+  color: @text-pink;
+}
+.main{
+  margin-bottom: 95px;
+  padding: 90px 0;
+  background: @bg-white;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/*catalog
+====================*/
+.catalog {
+  &__item {
+    margin-bottom: 35px;
+    &-img {
+      width: 227px;
+      height: 167px;
+      overflow: hidden;
+    }
+    &-title {
+      font-size: 22px;
+      font-weight: normal;
+      color: @text-violet;
+    }
+    &-text{
+      height: 60px;
+      overflow: hidden;
+    }
+  }
 }
