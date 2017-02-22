@@ -1,0 +1,65 @@
+.contacts{
+  /*map*/
+  .map{
+    margin-bottom: 50px;
+  }
+  /*contacts-text*/
+  &__text{
+    margin-bottom: 20px;
+    &.last{
+      margin-bottom: 80px;
+    }
+  }
+  /*inputs*/
+  input[type="text"],
+  input[type="email"],
+  input[type="number"]{
+    margin-bottom: 40px;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea{
+    background: @bg-gray;
+    border: 1px solid @border-gray;
+    &:focus{
+      outline: none;
+    }
+  }
+  /*textarea*/
+  textarea{
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 100%;
+    height: 370px;
+    text-align: left;
+    color: @text-color-light;
+  }
+  /*buttons*/
+  .buttons{
+    text-align: right;
+    input{
+      margin-left: 20px;
+      width: 90px;
+      height: 35px;
+      line-height: 35px;
+      color: @text-white;
+      background: @bg-pink;
+      border: none;
+      cursor: pointer;
+      transition: all 1s;
+      &:hover{
+        background: @bg-pink-dark;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
