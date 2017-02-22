@@ -1,0 +1,35 @@
+.usage{
+  padding: 100px 0;
+  &__item{
+    position: relative;
+    height: 285px;
+    text-align: center;
+    color: @text-white;
+    transition: all 1s;
+    cursor: pointer;
+    @media screen and (max-width: @md-width ) {
+      margin-bottom: 40px;
+    }
+    &:hover{
+      color: @text-violet;
+      background: @bg-white;
+    }
+  }
+  .usage__title-content{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  &__title{
+    position: relative;
+    left: -20px;
+    font-size: 68px;
+  }
+  &__subtitle{
+    position: relative;
+    left: 20px;
+    font-size: 48px;
+    font-weight: lighter;
+  }
+}

@@ -1,0 +1,21 @@
+.main-slogan{
+  position: relative;
+  height: 275px;
+  background: url("../img/main-slogan-bg.jpg") no-repeat center;
+  background-size: cover;
+  &__content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: @text-blue-dark;
+    @media screen and (max-width: 650px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}
