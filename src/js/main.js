@@ -15,7 +15,8 @@
 /*slick.js*/
 //= ../../bower_components\slick-carousel\slick\slick.min.js
 
-
+/*https://github.com/jquery-validation/jquery-validation*/
+//= ../../bower_components\jquery-validation\dist\jquery.validate.min.js
 
 
 

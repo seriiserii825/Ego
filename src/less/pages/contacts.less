@@ -31,6 +31,27 @@
       outline: none;
     }
   }
+  .form-group{
+    position: relative;
+    input{
+      &.error{
+        border-color: red;
+      }
+    }
+    input{
+      &.valid{
+        border-color: green;
+      }
+    }
+    label.error{
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      color: red;
+    }
+  }
+
+
   /*textarea*/
   textarea{
     margin-bottom: 50px;

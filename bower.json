@@ -20,7 +20,8 @@
     "bootstrap": "^3.3.7",
     "jquery-migrate": "^3.0.0",
     "smoothscroll-for-websites": "https://github.com/galambalazs/smoothscroll-for-websites.git#^1.4.6",
-    "jQuery-Hover-Delay": "https://github.com/john-terenzio/jQuery-Hover-Delay.git#^1.1.0"
+    "jQuery-Hover-Delay": "https://github.com/john-terenzio/jQuery-Hover-Delay.git#^1.1.0",
+    "jquery-validation": "https://github.com/jquery-validation/jquery-validation.git#^1.16.0"
   },
   "overrides": {
     "bootstrap": {

@@ -3,12 +3,11 @@ $(function () {
 		/*choose menu item
 		 =========================================================*/
 		$(document).ready(function () {
-				var location = window.location.href;
-				var cur_url = '' + location.split('/').pop();
+
 				$('.js-main-menu a').each(function () {
-						var link = $(this).attr('href');
-						if(cur_url == link){
-								$('.js-main-menu__item').removeClass('active');
+						var location = window.location.href;
+						var link = this.href;
+						if(location == link) {
 								$(this).addClass('active');
 						}
 				});
@@ -30,8 +29,25 @@ $(function () {
 				speed: 4000,
 				autoplay: true,
 				autoplaySpeed: 4000
+	});
 
+	/*validation*/
+		$('.contacts__form').validate({
+				"rules": {
+						name: {
+								required: true
+						},
+						email: {
+								required: true,
+								email: true
+						},
+						phone: {
+								required: true,
+								digits: true
+						}
 
+				}
 		});
+
     
 });
